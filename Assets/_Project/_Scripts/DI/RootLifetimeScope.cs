@@ -22,7 +22,7 @@ namespace ACT.Scripts
             builder.RegisterComponentInHierarchy<SceneTransitionView>();
             //Менеджер перехода между сценами. Асинхронная загрузка сцен + UniTask-и:
             builder.Register<ISceneTransitionManager, SceneTransitionManager>(Lifetime.Singleton);
-
+            //Точка входа в приложение. 
             builder.RegisterEntryPoint<EntryPoint>();
         }
     }
